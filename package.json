@@ -44,5 +44,16 @@
     "account": "TSTDRV1910377",
     "role": "1450",
     "testurl": ""
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueBanyanSolutions/netsuite-deploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlueBanyanSolutions/netsuite-deploy/issues"
+  },
+  "homepage": "https://github.com/BlueBanyanSolutions/netsuite-deploy#readme"
 }

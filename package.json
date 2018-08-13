@@ -1,5 +1,5 @@
 {
-  "name": "netsuite-deploy",
+  "name": "@bluebanyansolutions/netsuite-deploy",
   "version": "1.0.0",
   "description": "Deploy a project to Netsuite using SuiteTalk (Web Services) or SDF",
   "main": "lib\\index.js",

@@ -16,14 +16,33 @@
   "author": "Michoel Chaikin <micholi@gmail.com>",
   "dependencies": {
     "cross-spawn": "^5.1.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-filenames": "^4.0.1",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "gulp-util": "^3.0.8",
+    "keepass-http-client": "0.0.3",
+    "merge-stream": "^1.0.1",
     "nconf": "^0.8.4",
     "netsuite-suitetalk-wsdl-v2016-2.0": "^0.1.5",
     "node-fetch": "^1.6.3",
-    "soap-as-promised": "^1.19.0"
+    "open": "0.0.5",
+    "run-sequence": "^2.2.1",
+    "soap-as-promised": "^1.19.0",
+    "typescript": "^3.0.1",
+    "yargs": "^12.0.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-config-prettier": "^2.1.1"
+  },
+  "netsuite": {
+    "folder": "scripts",
+    "email": "sdf-deploy@bluebanyansolutions.com",
+    "account": "TSTDRV1910377",
+    "role": "1450",
+    "testurl": ""
   }
 }

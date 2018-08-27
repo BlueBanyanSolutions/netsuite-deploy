@@ -77,22 +77,14 @@ gulp.task('load-credentials', cb => {
 
 function deploy(environment) {
   // Even if there are no results, will still be an empty 'all'
-  if (Object.keys(filenames.get('all')).length === 1) {
+  if (Object.keys(filenames.get('all')).length === 0) {
     gulpUtil.log(gulpUtil.colors.red('No files to deploy!'));
     return;
   }
 
-  let config = filenames.get('objects').length
-    ? Object.assign(credentials, { environment, method: 'sdf', file: 'dist\\' })
-    : Object.assign(credentials, {
-        environment,
-        method: 'suitetalk',
-        file: filenames.get('files', 'full'),
-        path: netsuiteSettings.folder,
-        base: `${__dirname}/dist/FileCabinet/${netsuiteSettings.folder}/`,
-      });
+    let config = Object.assign(credentials, { environment, method: 'sdf', file: 'dist\\' });
 
-  return uploadToNetsuite(config);
+    return uploadToNetsuite(config);
 }
 
 gulp.task('deploy-sandbox', ['build', 'load-credentials'], () => {
